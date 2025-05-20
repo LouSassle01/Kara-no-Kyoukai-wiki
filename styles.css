@@ -1,0 +1,242 @@
+@font-face { /* Custom Font */
+    font-family: 'Augusta';
+    src: url('Font/Augusta.ttf');
+}
+
+body {  /*  Background, main page body */
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    background-color: #13133a;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header { /* Banner  */
+    background-image: url('pics/kara-no-kyoukai-2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+    padding: 1em 0;
+    padding-left: 20px;
+}
+
+h1 { /* Page Title Header  */
+    color: white;
+    font-size: 45px;
+    font-family: 'Augusta';
+    background: linear-gradient(to top left, #0099cc 0%, #003366 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h3 { /* Setting, Plot, Characters etc...  */
+    display: flex;
+    color: #0066ff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.navbar { /* Navbar */
+    background-color: #33001a;
+    overflow: hidden;
+}
+
+.navbar a { 
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover { /* Hover */
+    background-color: #575757;
+}
+
+.main-content { /* paragraphs, etc... */
+    display: flex;
+    margin: 10px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.sidebar { /* Sidebar */
+    flex: 1;
+    background-color: #22243a;
+    padding: 10px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    max-height: 480px; 
+}
+
+.sidebar h2 { 
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+    color: white;
+}
+
+.sidebar ul li a {A
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.content { /* Content css(middle bar) */
+    flex: 2;
+    background-color: #22243a;
+    padding: 20px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.gif-container {
+    display: flex;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.gif-container img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.content-section { 
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.content-section h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    color: white;
+    font-family: '';
+    font-size: 30px;
+}
+
+.image-container { /* Art Container on the right */
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: #22243a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.gallery-section {
+    margin-top: 20px;
+}
+
+.gallery-section h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: grid;
+    gap: 10px;
+}
+
+.gallery-item {
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+    transform: scale(1.1);
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.image-container img { 
+    max-width: 70%;
+    width: 300px; 
+    height: 500px; 
+    height: auto;
+    border: 0px solid #ccc;
+    padding: 1px;
+}
+
+.image-container2 img { 
+    max-width: 70%;
+    width: 300px; 
+    height: 500px; 
+    height: auto;
+    border: 0px solid #ccc;
+    padding: 1px;
+}
+
+.image-container p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: white;
+}
+
+.image-container img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 0px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    background-color: #19194d;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.secret { /* Secret css */
+    background-color: #13133a;
+    background-image: url('pics/secret.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+footer {
+    background-color: #33001a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
